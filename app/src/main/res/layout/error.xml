@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/error_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@android:color/background_light"
+    android:visibility="gone"
+    >
+    <ImageView
+        android:id="@+id/no_result"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/no_result"
+        />
+    <TextView
+        android:id="@+id/errorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error Title"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/no_result"
+        android:textColor="@color/colorTextTitle"
+        android:layout_marginTop="60dp"
+        />
+    <TextView
+        android:id="@+id/errorSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error Messenger"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/errorTitle"
+        android:textColor="@color/colorTextSubtitle"
+        />
+    <Button
+        android:id="@+id/btn_Retry"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/errorSubTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Retry"/>
+
+
+
+</RelativeLayout>
